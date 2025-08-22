@@ -1,0 +1,329 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\This PC\\Desktop\\Playwright Project 2\\playwright.config.ts",
+    "rootDir": "C:/Users/This PC/Desktop/Playwright Project 2",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "dot",
+        null
+      ],
+      [
+        "line",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "results.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFile": "results.html",
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/This PC/Desktop/Playwright Project 2/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/This PC/Desktop/Playwright Project 2",
+        "testIgnore": [],
+        "testMatch": [
+          "example.spec.ts"
+        ],
+        "timeout": 3000000
+      },
+      {
+        "outputDir": "C:/Users/This PC/Desktop/Playwright Project 2/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/This PC/Desktop/Playwright Project 2",
+        "testIgnore": [],
+        "testMatch": [
+          "example.spec.ts"
+        ],
+        "timeout": 3000000
+      },
+      {
+        "outputDir": "C:/Users/This PC/Desktop/Playwright Project 2/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/This PC/Desktop/Playwright Project 2",
+        "testIgnore": [],
+        "testMatch": [
+          "example.spec.ts"
+        ],
+        "timeout": 3000000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.54.2",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "e2e\\example.spec.ts",
+      "file": "e2e/example.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "has title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 3000000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3523,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-06T19:17:50.913Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\This PC\\Desktop\\Playwright Project 2\\test-results\\e2e-example-has-title-chromium\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 3000000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 56,
+                  "error": {
+                    "message": "Error: browser.newContext: Unknown permission: camera",
+                    "stack": "Error: browser.newContext: Unknown permission: camera"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browser.newContext: Unknown permission: camera"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-06T19:18:01.010Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            },
+            {
+              "timeout": 3000000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 484,
+                  "error": {
+                    "message": "Error: browserContext.newPage: Unknown permission: camera",
+                    "stack": "Error: browserContext.newPage: Unknown permission: camera"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserContext.newPage: Unknown permission: camera"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-06T19:18:13.624Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8662f6c158462371ef55-3cefc79338f3d9637e30",
+          "file": "e2e/example.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "get started link",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 3000000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2845,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-06T19:17:55.885Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\This PC\\Desktop\\Playwright Project 2\\test-results\\e2e-example-get-started-link-chromium\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 3000000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 45,
+                  "error": {
+                    "message": "Error: browser.newContext: Unknown permission: camera",
+                    "stack": "Error: browser.newContext: Unknown permission: camera"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browser.newContext: Unknown permission: camera"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-06T19:18:08.624Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            },
+            {
+              "timeout": 3000000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 188,
+                  "error": {
+                    "message": "Error: browserContext.newPage: Unknown permission: camera",
+                    "stack": "Error: browserContext.newPage: Unknown permission: camera"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserContext.newPage: Unknown permission: camera"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-06T19:18:18.109Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8662f6c158462371ef55-b4fa6bd619ed7e7a79e6",
+          "file": "e2e/example.spec.ts",
+          "line": 10,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-08-06T19:17:48.962Z",
+    "duration": 29597.356,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 4,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,14 @@
+{
+    "dev": {
+        "BASE_URL": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+        "USERNAME": "Admin",
+        "PASSWORD": "admin123",
+        "CMS_ROUTE": "/cms"
+    },
+    "prod": {
+        "BASE_URL": "http://example.com",
+        "USERNAME": "prod_user",
+        "PASSWORD": "prod_pass",
+        "CMS_ROUTE": "/cms"
+    }
+}

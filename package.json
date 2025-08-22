@@ -1,0 +1,32 @@
+{
+  "name": "playwright-project-2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:dev": "cross-env NODE_ENV=dev playwright test",
+    "test:stg": "cross-env NODE_ENV=stg playwright test",
+    "test:prod": "cross-env NODE_ENV=prod playwright test",
+    "test:local": "cross-env NODE_ENV=local playwright test",
+    "test:headed": "cross-env NODE_ENV=test playwright test --headed",
+    "test:headless": "cross-env NODE_ENV=test playwright test --headless",
+    "report": "npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.54.2",
+    "@types/node": "^24.1.0"
+  },
+  "dependencies": {
+    "cross-env": "^10.0.0",
+    "dotenv": "^17.2.1",
+    "playwright-ts-automationframework": "^1.1.62",
+    "typescript": "^5.8.3"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "description": ""
+}
