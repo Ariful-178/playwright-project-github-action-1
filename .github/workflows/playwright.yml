@@ -1,22 +1,22 @@
-name: Playwright Tests
+name: Playwright Test & Deploy Report
 
 on:
   schedule:
     # 3 PM Bangladesh time = 09:00 UTC
-    - cron: '0 9 * * *'
-  workflow_dispatch: # allow manual trigger
+    - cron: "0 9 * * *"
+  workflow_dispatch: # allows manual run
 
 permissions:
   contents: read
-  pages: write      # for GitHub Pages
+  pages: write
   id-token: write
 
 jobs:
-  test:
+  test-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Node.js
@@ -33,11 +33,12 @@ jobs:
       - name: Run Playwright tests
         run: npx playwright test --reporter=html
 
-      - name: Upload report for GitHub Pages
+      - name: Prepare dated report folder
         run: |
-          mkdir -p ./public
-          cp -r playwright-report/* ./public/
-    
+          DATE=$(date +'%Y-%m-%d')
+          mkdir -p ./public/$DATE
+          cp -r playwright-report/* ./public/$DATE/
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
